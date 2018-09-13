@@ -45,7 +45,7 @@ regressor.add(Dense(units = 3))
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 
-# Fitting the RNN to the trainingpredicted_min_price_1 set
+# Fitting the RNN to the training set
 regressor.fit(X_train, y_train, batch_size = 32, epochs = 200)
 
 # Getting the predicited min price
